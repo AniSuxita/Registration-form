@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#DDA5E3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="რეგისტრაცია"
+            android:textColor="#6A48A6"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:hint="სახელი"
+                android:maxLines="1"
+                android:textColor="#6D4B97"
+                android:textColorHint="#644788"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:hint="გვარი"
+                android:maxLines="1"
+                android:textColor="#6D4B97"
+                android:textColorHint="#644788"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/Mail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="Email"
+            android:maxLines="1"
+            android:textColor="#6D4B97"
+            android:textColorHint="#644788"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:maxLines="1"
+            android:hint="Password"
+            android:textColor="#6D4B97"
+            android:textColorHint="#644788"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yup totally checking this box"
+            android:textColor="#411973"
+            android:layout_margin="15dp"/>
+
+        <Button
+            android:id="@+id/Knopka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#935BD8"
+            android:text="რეგისტრაცია"
+            android:layout_margin="15dp"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
